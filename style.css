@@ -1,21 +1,21 @@
 /* Общие стили */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #f9f9f9;
+    color: #444;
 }
 
 .container {
-    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
 /* Стили для шапки сайта */
 header {
-    background-color: #3b3b3b;
+    background: linear-gradient(to right, #333, #444);
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -23,47 +23,61 @@ header {
 
 header h1 {
     margin: 0;
+    font-size: 2.5em;
 }
 
 header nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 10px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Стили для разделов */
-section {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
 section h2 {
     margin-top: 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #eee;
     padding-bottom: 10px;
+    font-size: 2em;
+    color: #007bff; /* Акцентный цвет */
 }
 
-/* Стили для проектов */
 .project {
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
+    border: 1px solid #eee;
+    padding: 20px;
     border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .project h3 {
     margin-top: 0;
+    font-size: 1.5em;
 }
 
 .project p {
     margin-bottom: 10px;
+    line-height: 1.6; /* Улучшенная читаемость */
 }
 
+
 .project a {
-    color: #007bff;
+    color: #fff;
     text-decoration: none;
+    background-color: #007bff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+    background-color: #0056b3;
 }
 
 /* Стили для списка навыков */
@@ -78,9 +92,8 @@ section h2 {
 
 /* Стили для подвала */
 footer {
-    background-color: #333;
+    background-color: #444;
     color: #fff;
     text-align: center;
     padding: 10px 0;
 }
-
